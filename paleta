@@ -1,0 +1,10 @@
+// Cor	Hex	Uso sugerido
+// Preto Profundo	#0B0B0B	Fundo principal, sombras
+// Bordô Escuro	#4A0E0E	Destaques macabros, sangue seco
+// Cinza Frio	#2C2C2C	Textos secundários, atmosfera
+// Verde Doente	#506C4B	Detalhes estranhos, neblina
+// Bege Morto	#D6C8B6	Contraste pálido, rostos pálidos
+// Vermelho Enferrujado	#872727	Elementos de tensão, botões
+
+// // ideia percorrer o array no começo com dicas, enquanto faz o load do conteudo
+// de forma assincrona

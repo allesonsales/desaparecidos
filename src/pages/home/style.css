@@ -1,0 +1,85 @@
+#home {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/footage.mp4");
+}
+
+.videoContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow: hidden;
+  z-index: -5;
+}
+
+.videoContainer::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(53, 18, 2, 0.648);
+  mix-blend-mode: multiply;
+}
+
+#bgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+  object-fit: cover;
+  z-index: -5;
+}
+
+.introducaoContainer {
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.introducaoContainer h1 {
+  font-size: 4rem;
+  font-family: "bahiana";
+  color: var(--botao);
+}
+
+.introducao {
+  font-family: "Road Rage", sans-serif;
+  white-space: wrap;
+  width: 30%;
+  justify-self: center;
+  color: white;
+  font-size: 2rem;
+  line-height: 35px;
+}
+
+.continuar button {
+  background-color: transparent;
+  font-family: "bahiana";
+  font-size: 1.5rem;
+  color: white;
+  border: solid 2px var(--botao);
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.continuar button:hover {
+  border: solid 2px #506c4b;
+  color: var(--botao);
+  transition: ease-in-out 0.2s;
+}
+
+@media (max-width: 768px) {
+  .introducao {
+    width: 100%;
+  }
+}

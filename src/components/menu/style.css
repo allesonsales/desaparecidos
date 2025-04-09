@@ -1,0 +1,35 @@
+.menuContainer {
+  position: fixed;
+  margin-top: 1rem;
+  right: 2rem;
+  z-index: 200;
+  display: flex;
+  gap: 1rem;
+}
+.menuContainer button {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: white;
+  border: solid 2px white;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.menuContainer button:hover {
+  border: solid 2px var(--verde);
+}
+
+@media (max-width: 768px) {
+  .menuContainer {
+    right: 1rem;
+  }
+  .menuContainer button {
+    width: 30px;
+    height: 30px;
+  }
+}

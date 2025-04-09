@@ -1,0 +1,51 @@
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 300;
+}
+
+.modalContainer {
+  background-color: var(--botao);
+  padding: 1rem;
+  width: 30%;
+  border-radius: 25px;
+  position: relative;
+}
+
+.modalContainer i {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  cursor: pointer;
+}
+
+.dicas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.dicas h2 {
+  font-family: "bahiana";
+  font-size: 4rem;
+}
+
+@media (max-width: 768px) {
+  .modalContainer {
+    width: 80%;
+    padding: 2rem;
+  }
+
+  .dicas h2 {
+    text-align: center;
+    line-height: 50px;
+  }
+}

@@ -1,0 +1,18 @@
+.carregando {
+  display: flex;
+  flex-direction: column;
+  color: var(--botao);
+  place-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.carregando i {
+  font-size: 5rem;
+}
+
+.carregando p {
+  font-family: "bahiana";
+  color: white;
+  font-size: 1.5rem;
+}

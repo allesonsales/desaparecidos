@@ -1,0 +1,22 @@
+.botaoVoltar {
+  position: absolute;
+  margin-top: 1rem;
+  left: 2rem;
+  z-index: 50;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  color: white;
+  border: solid 2px white;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.botaoVoltar:hover {
+  color: var(--botao);
+  border: solid 2px var(--verde);
+}

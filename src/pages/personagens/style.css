@@ -1,0 +1,165 @@
+.framerContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.frame {
+  width: 25vw;
+  height: 100vh;
+  background-color: var(--botao);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  cursor: pointer;
+  position: relative;
+}
+
+.frame:hover .image {
+  opacity: 0.8;
+  height: 110%;
+  width: 110%;
+  transition: ease-in-out 0.2s;
+  background-position: center;
+}
+
+.frame:hover .historia p {
+  background-color: #87272793;
+}
+
+.frame:hover .texto span {
+  color: white;
+}
+
+.frame:active .image {
+  filter: sepia(9) saturate(2);
+}
+
+.texto {
+  position: absolute;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 1;
+  width: 100%;
+}
+
+.name {
+  color: #4a0e0e;
+  font-family: "Bahiana";
+  font-size: 5rem;
+  opacity: 1;
+  position: relative;
+  top: 5rem;
+}
+
+.historia {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 11rem;
+  color: white;
+}
+
+.historiaMobile {
+  display: none;
+}
+
+.historia p {
+  padding: 1rem;
+}
+
+.mask {
+  width: 100%;
+  height: 95%;
+
+  mask-image: url("/frame.png");
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  mask-position: center;
+
+  -webkit-mask-image: url("/frame.png");
+  -webkit-mask-size: cover;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  background-color: #0b0b0b;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: ease-in-out 0.2s;
+}
+
+.Felipe {
+  background-image: url("../../assets/felipe.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.Lucas {
+  background-image: url("../../assets/lucas.jpg");
+}
+
+.Leticia {
+  background-image: url("../../assets/leticia.jpg");
+}
+
+.Amanda {
+  background-image: url("../../assets/amanda.jpg");
+}
+
+.escolha {
+  position: absolute;
+  z-index: 100;
+  top: 1rem;
+  place-items: center;
+  width: 100vw;
+}
+
+@media (max-width: 768px) {
+  .framerContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 0rem;
+  }
+
+  .frame {
+    width: 50vw;
+    height: 50vh;
+  }
+
+  .name {
+    color: white;
+    font-size: 2rem;
+    top: -10rem;
+  }
+
+  .image {
+    opacity: 0.5;
+  }
+
+  .escolha {
+    top: 48%;
+  }
+
+  .historia {
+    display: none;
+  }
+
+  .historiaMobile {
+    display: flex;
+    padding: 1rem;
+    font-size: 0.6rem;
+    position: absolute;
+  }
+}
