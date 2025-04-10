@@ -31,5 +31,7 @@
   .menuContainer button {
     width: 30px;
     height: 30px;
+    font-size: 15px;
+    border: solid 1px white;
   }
 }

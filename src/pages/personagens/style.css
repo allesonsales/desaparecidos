@@ -141,7 +141,7 @@
   .name {
     color: white;
     font-size: 2rem;
-    top: -10rem;
+    transform: translate(0, -125%);
   }
 
   .image {
@@ -159,7 +159,8 @@
   .historiaMobile {
     display: flex;
     padding: 1rem;
-    font-size: 0.6rem;
+    font-size: 0.4rem;
     position: absolute;
+    transform: translate(0, 50%);
   }
 }

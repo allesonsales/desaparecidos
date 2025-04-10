@@ -41,6 +41,7 @@ const Arquivos = ({ children }: Props) => {
   useEffect(() => {
     const startAudio = () => {
       audioBG.play();
+      audioBG.loop = true;
       window.removeEventListener("click", startAudio);
     };
     window.addEventListener("click", startAudio);

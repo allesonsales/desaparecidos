@@ -1,6 +1,6 @@
 # 🕵️‍♂️ Bem vindo(a) à investigação dos **DESAPARECIDOS**
 
-![Screenshot](public\screenshot.png)
+![Screenshot](desaparecidos/screenshot.png)
 
 ### Quatro adolescentes desapareceram é sua missão tentar encontrá\*los, interaja com o detetive (agente de chat de IA) e descubra o que aconteceu com um deles.
 

@@ -82,4 +82,9 @@
   .introducao {
     width: 100%;
   }
+
+  .introducao {
+    font-size: 1.5rem;
+    line-height: 25px;
+  }
 }
