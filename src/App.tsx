@@ -18,12 +18,9 @@ function App() {
             <Menu />
             <Routes>
               <Route path="/desaparecidos" element={<Home />} />
+              <Route path="/personagens" element={<Personagens />} />
               <Route
-                path="/desaparecidos/personagens"
-                element={<Personagens />}
-              />
-              <Route
-                path="/desaparecidos/personagens/:personagem"
+                path="/personagens/:personagem"
                 element={<HistoriaPrincipal />}
               />
             </Routes>

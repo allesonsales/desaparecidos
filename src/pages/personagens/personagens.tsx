@@ -9,8 +9,6 @@ import Historia from "../../components/modalHistory/modalHistory";
 const Personagens = () => {
   const personagens: string[] = ["Felipe", "Lucas", "Leticia", "Amanda"];
   const [selecionado, setSelecionado] = useState<string | null>(null);
-  const carouselRef = useRef<HTMLDivElement>(null);
-  const [larguraDrag, setLarguraDrag] = useState(0);
 
   const arquivos = useContext(ArquivosContext);
   if (!arquivos) {
@@ -39,13 +37,7 @@ const Personagens = () => {
         <h2>Escolha sua história...</h2>
       </div>
       <div className="wrappper">
-        <motion.div
-          ref={carouselRef}
-          className="framerContainer"
-          drag="x"
-          dragConstraints={{ left: -larguraDrag, right: 0 }}
-          whileTap={{ cursor: "grabbing" }}
-        >
+        <div className="framerContainer">
           {personagens.map((nome: string) => (
             <motion.div
               key={nome}
@@ -84,7 +76,7 @@ const Personagens = () => {
               </div>
             </motion.div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </>
   );
