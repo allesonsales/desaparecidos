@@ -1,9 +1,8 @@
 import { createContext, useEffect, useState, ReactNode } from "react";
 import { animate, Variants } from "framer-motion";
-const audioBG = new Audio("/background.mp3");
-
-const selectMenuAudio = new Audio("/menuSelect.ogg");
-const selecionadoAudio = new Audio("/selecionado.mp3");
+const audioBG = new Audio("/desaparecidos/background.mp3");
+const selectMenuAudio = new Audio("/desaparecidos/menuSelect.ogg");
+const selecionadoAudio = new Audio("/desaparecidos/selecionado.mp3");
 export const ArquivosContext = createContext<ArquivosContextType | null>(null);
 
 type ArquivosContextType = {

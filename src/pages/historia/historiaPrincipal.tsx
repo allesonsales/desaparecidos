@@ -22,7 +22,7 @@ const HistoriaPrincipal = () => {
       <motion.section id="containerPrincipal" {...TransicaoPagina}>
         <div className="videoContainer">
           <video typeof="video/mp4" loop muted autoPlay id="bgVideo">
-            <source src="/footage.mp4" type="video/mp4" />
+            <source src="/desaparecidos/footage.mp4" type="video/mp4" />
           </video>
         </div>
         <div className="imagemPrincipal">
