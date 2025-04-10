@@ -7,7 +7,6 @@ import Menu from "./components/menu/menu";
 import ModalDicas from "./components/modalDicas/modalDicas";
 import HistoriaPrincipal from "./pages/historia/historiaPrincipal";
 import { AnimatePresence } from "framer-motion";
-import Detetive from "./components/chat/chat";
 
 function App() {
   return (
@@ -18,10 +17,13 @@ function App() {
             <ModalDicas />
             <Menu />
             <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/personagens" element={<Personagens />} />
+              <Route path="/desaparecidos" element={<Home />} />
               <Route
-                path="/personagens/:personagem"
+                path="/desaparecidos/personagens"
+                element={<Personagens />}
+              />
+              <Route
+                path="/desaparecidos/personagens/:personagem"
                 element={<HistoriaPrincipal />}
               />
             </Routes>
